@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "lib": ["es2015", "es2016", "dom", "es2018.promise"],
+    "esModuleInterop": true
+  }
+}
