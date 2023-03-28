@@ -10,7 +10,7 @@ export const useAddImage = () => {
     const newImage: IPhoto = {
       ...data,
       id: uuid(),
-      status: 'inactive',
+      status: 'fresh',
     };
 
     cache.setQueryData<IPhoto[]>('photos list', (prevData = []) => [

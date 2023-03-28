@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import { useImageList } from '../../hooks/useImageList';
 import { IPhoto } from '../../services/unsplash.service';
 import { ImageCard } from '../ImageCard';
@@ -28,17 +26,3 @@ export const ImageList: React.FC = () => {
     </ImageListWrapper>
   );
 };
-// TODO: CLEAR вынес в хук useImageList
-// const [images, setPhotos] = useState<IPhoto[]>([]);
-// const { isLoading, error } = useQuery(
-//   'photos list',
-//   () => UnsplashService.getAll(),
-//   {
-//     onSuccess: ({ data }) => {
-//       setPhotos(data);
-//     },
-//     onError: (error: any) => {
-//       alert(error.message);
-//     },
-//   },
-// );

@@ -27,12 +27,3 @@ export const useDeleteCard = () => {
     },
   });
 };
-
-// TODO: CLEAR рабочий вариант удаления из карточки
-// export const useDeleteCard = (): UseMutationResult<void, unknown, string> => {
-//   const deletePhotoMutation = useMutation(async (id: string) => {
-//     await UnsplashService.deletePhoto(id);
-//   });
-
-//   return deletePhotoMutation;
-// };

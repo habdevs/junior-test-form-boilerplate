@@ -62,7 +62,7 @@ exports.useAddImage = function () {
     var addImage = function (data) { return __awaiter(void 0, void 0, void 0, function () {
         var newImage;
         return __generator(this, function (_a) {
-            newImage = __assign(__assign({}, data), { id: uuid_1.v4(), status: 'inactive' });
+            newImage = __assign(__assign({}, data), { id: uuid_1.v4(), status: 'fresh' });
             cache.setQueryData('photos list', function (prevData) {
                 if (prevData === void 0) { prevData = []; }
                 return __spreadArrays(prevData, [

@@ -33,24 +33,3 @@ exports.useImageList = function () {
         addNewPhoto: addNewPhoto
     };
 };
-// TODO: CLEAR хуTQueryFnData extends IPhoto[] = unknownPhoto[] = unknown ошибок
-// export const useImageList = () => {
-//   const [images, setPhotos] = useState<IPhoto[]>([]);
-//   const { isLoading, error } = useQuery(
-//     'photos list',
-//     () => UnsplashService.getAll(),
-//     {
-//       onSuccess: ({ data }) => {
-//         setPhotos(data);
-//       },
-//       onError: (error: any) => {
-//         alert(error.message);
-//       },
-//     },
-//   );
-//   return {
-//     images,
-//     isLoading,
-//     error,
-//   };
-// };
